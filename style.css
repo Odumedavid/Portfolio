@@ -1,0 +1,400 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Preahvihear", sans-serif;
+}
+
+body {
+    background-color: #11071f;
+    color: #fff;
+    min-height: 100vh;
+    margin-bottom: 4rem;
+}
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0rem 16rem;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 16rem;
+    width: 100%;
+    max-width: 1400px;
+    height: 80px;
+    margin: 0 auto;
+    background: #1a0b2e;
+}
+
+.nav-lists {
+    display: flex;
+    gap: 2rem;
+}
+
+#menu {
+display: none;
+}
+
+#home {
+    display: flex;
+    align-items: center;
+    gap: 53px;
+    margin-top: 3rem;
+}
+
+
+
+#about h2{
+    font-size: 50px;
+    letter-spacing: 1px;
+}
+
+#about h3{
+    margin-top: 70px;
+}
+
+
+.image-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 385px;
+    height: 431px;
+    border-radius: 431px;
+    background: radial-gradient(
+    50% 50% at 50% 50%,
+     #763cac 0%,
+    rgba(50, 15, 133, 0)  100%
+    );
+}
+
+.inner-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 258px;
+    height: 259px;
+    border-radius: 259px;
+    background: radial-gradient(
+    50% 50% at 50% 50%,
+    #fff 17.71%,
+    rgba(67, 67 ,67 ,0) 100%
+    );
+}
+.hero_img {
+    width: 165px;
+    height: 223px;
+}
+
+.text-wrapper {
+    width: 386px;
+}
+
+.top-text {
+    font-size: 17px;
+    font-weight: 400px;
+    text-decoration-line: underline;
+}
+
+.main-text {
+    font-size: 50px;
+    line-height: 126.664%;
+    letter-spacing: 1px;
+}
+
+.bottom-text {
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 0.22px;
+}
+
+.highlight1 {
+    color: #7127ba;
+    position: relative;
+}
+
+.stroke {
+    width: 188.584px;
+    height: 57.899px;
+    transform: rotate(-4.744deg);
+    flex-shrink: 0;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    position: absolute;
+    left: -16px;
+}
+
+
+.facebook {
+    position: relative;
+    height: 21px;
+    width: 20px;
+    top: 5px;
+}
+
+#experience {
+    margin-top: 170px;
+    display: flex;
+    flex-direction: column;
+    gap: 44px;
+}
+
+#experience h3 {
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.card_container {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 425px;
+    height: 168.061px;
+    border-radius: 15px;
+    padding: 12px;
+    box-shadow: 4px 7px 26px 0px rgba( 0, 0, 0, 0.12);
+    transition: all 300ms ease;
+    background: linear-gradient(
+        110deg,
+        #130428 19.95%,
+        #251043 67.64%,
+        #38126d 107.08%,
+        #261045 156.61%,
+        #190634 183.21%
+    );
+
+    &:hover {
+        transform: scale(1.05);
+    }
+
+    img {
+        width: 80%;
+    }
+
+    .inner_card {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 11px;
+    }
+
+    h4 {
+        font-size: 26px;
+        font-weight: 600;
+        line-height: 32.5px;
+    }
+
+    p {
+        font-size: 8px;
+        line-height: 10.5px;
+    }
+
+    button {
+        width: 119px;
+        height: 33px;
+        flex-shrink: 0;
+        background: #2c1250;
+        border: 1px solid #693b93;
+        border-radius: 10px;
+        color: inherit;
+    }
+
+    
+    
+
+    
+}
+
+#skills {
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 110%;
+    flex-direction: column;
+    gap: 24px;
+
+    h3 {
+        width: 663px;
+        text-align: center;
+        font-size: 24px;
+        color: #fff;
+        line-height: 31px;
+        letter-spacing: 0.48px;
+
+        span:last-child {
+            font-size: 17px;
+        }
+        
+    }
+}
+
+.glass {
+    width: 400px;
+    height: 400px;
+    background: #fff;
+    color: black;
+    opacity: 30%;
+    background-blend-mode: overlay, normal;
+}
+
+
+@media (max-width: 768px) {
+    .container{
+        max-width: 100x;
+        padding: 0 6rem;
+        
+    }
+
+    .nav-lists {
+        display: none;
+    }
+    header {
+        padding: 0rem 2rem;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    #home {
+        flex-direction: column;
+    }
+
+    .text-wrapper {
+        width: auto;
+        height: auto;
+    }
+
+    #menu {
+        display: inline;
+        font-size: 30px;
+    }
+
+    #about {
+        margin-top: 50px;
+    }
+    #about h2{
+        font-size: 30px;
+        letter-spacing: 1px;
+    }
+    
+    #about h3{
+        font-size: 16px;
+        margin-top: 30px;
+    }
+
+    #about p {
+        font-size: 12px;
+    }
+
+    #experience {
+        margin-top: 100px;
+    }
+
+    .card_container{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 20px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    #skills {
+        h3 {
+            width: auto;
+            font-size: 22px;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        max-width: 480px;
+        padding: 0 2rem;
+    }
+
+    header {
+        padding: 0rem 2rem;
+        width: 120%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .nav-lists {
+        display: none;
+    }
+
+    #menu {
+        display: inline;
+        font-size: 30px;
+    }
+
+    .text-wrapper {
+        width: auto;
+        height: auto;
+    }
+
+    #home {
+        flex-direction: column;
+    }
+
+    .main-text {
+        font-size: 30px;
+        line-height: 126.664%;
+        letter-spacing: 1px;
+    }
+
+    .stroke {
+        width: 115px;
+        height: 40px;
+        left: -12px;
+    }
+
+    
+    #about h2{
+        font-size: 30px;
+        letter-spacing: 1px;
+    }
+    
+    #about h3{
+        font-size: 14px;
+        margin-top: 30px;
+    }
+
+    #about p {
+        font-size: 10px;
+    }
+
+    .card {
+        padding: 10px;
+        h4 {
+            font-size: 16px;
+        }
+    }
+}
